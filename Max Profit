@@ -26,11 +26,13 @@ public class MAX_Profit {
     ArrayList<int> min = new ArrayList<int> ();
     ArrayList<int> max = new ArrayList<int> ();
     
-    for (int i = 0; i < stockPrices.length; i++) {
+    /*for (int i = 0; i < stockPrices.length; i++) {
       if (i = 0) {
-        min [0] = 
+        
       }
-    }
+    }*/
+    min [0] = 1;
+    System.out.println ("" + min [0]);
   }
   
   public static void main (String [] args) {
