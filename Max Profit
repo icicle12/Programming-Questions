@@ -8,7 +8,7 @@ So if the stock cost $500 at 10:30am, stock_prices_yesterday[60] = 500.
 Write an efficient function that takes stock_prices_yesterday and returns the best profit I could have made from 
 1 purchase and 1 sale of 1 Apple stock yesterday.
 */
-import java.lang.Object;
+import java.util.ArrayList;
 
 class stock {
   public Object price;
@@ -22,15 +22,17 @@ class stock {
 
 public class MAX_Profit {
   
-  public int Profit (stock [] stockPrices) {
+  public int Profit (int [] stockPrices) {
     ArrayList<stock> min = new ArrayList<stock> ();
     ArrayList<stock> max = new ArrayList<stock> ();
     
     for (int i = 0; i < stockPrices.length; i++) {
       if (i == 0) {
-          
+        stock myStock = new stock (stockPrices [i], i);  
+        min.add (myStock);    
       }
-    }
+      }
+      return 0;
   }
   
   public static void main (String [] args) {
