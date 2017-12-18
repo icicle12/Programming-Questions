@@ -31,7 +31,18 @@ public class MAX_Profit {
         stock myStock = new stock (stockPrices [i], i);  
         min.add (myStock);    
       }
+      
       if (i + 1 == stockPrices.length) {
+        stock myStock = new stock (stockPrices [i], i);
+        max.add (myStock);
+      }
+      
+      if (stockPrices [i] < stockPrices [i -1] && stockPrices [i] < stockPrices [i + 1]) {
+        stock myStock = new stock (stockPrices [i], i);
+        min.add (myStock);
+      }
+      
+      if (stockPrices [i] > stockPrices [i -1] && stockPrices [i] > stockPrices [i + 1]) {
         stock myStock = new stock (stockPrices [i], i);
         max.add (myStock);
       }
