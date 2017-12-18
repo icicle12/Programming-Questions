@@ -29,12 +29,14 @@ public class MAX_Profit {
     for (int i = 0; i < stockPrices.length; i++) {
       if (i == 0) {
         stock myStock = new stock (stockPrices [i], i);  
-        min.add (myStock);    
+        min.add (myStock);
+        continue;
       }
       
       if (i + 1 == stockPrices.length) {
         stock myStock = new stock (stockPrices [i], i);
         max.add (myStock);
+        continue;
       }
       
       if (stockPrices [i] < stockPrices [i -1] && stockPrices [i] < stockPrices [i + 1]) {
