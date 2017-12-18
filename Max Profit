@@ -31,8 +31,12 @@ public class MAX_Profit {
         stock myStock = new stock (stockPrices [i], i);  
         min.add (myStock);    
       }
+      if (i + 1 == stockPrices.length) {
+        stock myStock = new stock (stockPrices [i], i);
+        max.add (myStock);
       }
-      return 0;
+    }
+    return 0;
   }
   
   public static void main (String [] args) {
