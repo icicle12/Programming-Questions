@@ -10,7 +10,7 @@ Write an efficient function that takes stock_prices_yesterday and returns the be
 */
 import java.lang.Object;
 
-public class stock {
+class stock {
   public Object price;
   public Object time;
   
@@ -23,19 +23,17 @@ public class stock {
 public class MAX_Profit {
   
   public int Profit (int [] stockPrices) {
-    ArrayList<int> min = new ArrayList<int> ();
-    ArrayList<int> max = new ArrayList<int> ();
+    ArrayList<Integer> min = new ArrayList<Integer> ();
+    ArrayList<Integer> max = new ArrayList<Integer> ();
     
-    /*for (int i = 0; i < stockPrices.length; i++) {
+    for (int i = 0; i < stockPrices.length; i++) {
       if (i = 0) {
         
       }
-    }*/
+    }
   }
   
   public static void main (String [] args) {
-    ArrayList<int> min = new ArrayList<int> ();
-    min [0] = 1;
-    System.out.println ("" + min [0]);
+    
   }
 }
