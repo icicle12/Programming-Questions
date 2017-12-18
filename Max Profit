@@ -10,6 +10,16 @@ Write an efficient function that takes stock_prices_yesterday and returns the be
 */
 import java.lang.Object;
 
+public class stock {
+  public Object price;
+  public Object time;
+  
+  public stock (int stockPrice, int stockTime) {
+    price = stockPrice;
+    time = stockTime;
+  }
+}
+
 public class MAX_Profit {
   
   public int Profit (int [] stockPrices) {
