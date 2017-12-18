@@ -23,8 +23,8 @@ public class stock {
 public class MAX_Profit {
   
   public int Profit (int [] stockPrices) {
-    ArrayList<int min> = new ArrayList<int min> ();
-    ArrayList<int max> = new ArrayList<int max> ();
+    ArrayList<int> min = new ArrayList<int> ();
+    ArrayList<int> max = new ArrayList<int> ();
     
     for (int i = 0; i < stockPrices.length; i++) {
       if (i = 0) {
